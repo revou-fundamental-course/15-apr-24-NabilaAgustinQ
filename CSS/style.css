@@ -1,0 +1,127 @@
+body {
+    display: flex;
+}
+
+main {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(1080px - 25%);
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-section {
+    padding: 16px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    text-align: center;
+    border: double;
+    border-color: coral;
+}
+
+.section-celsius {
+    padding-top: 10px;
+}
+
+.section-input {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.section-fahrenheit {
+    padding-top: 16px;
+}
+
+.section-output {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.section-result {
+    padding-top: 16px;
+}
+
+.f-c {
+    font-size: small;
+}
+
+.section-explain {
+    padding-top: 16px;
+}
+
+textarea {
+    width: 70%;
+    height: 32px;
+    resize: none;
+    border: 2px solid lightgreen;
+    border-radius: 4px;
+    font-size: 16px;
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+.s-miring1 {
+    font-weight: bold;
+}
+
+.s-miring2 {
+    font-weight: bold;
+}
+
+.formula-F {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.formula-F>sub {
+    font-style: normal;
+}
+
+.container-button {
+    padding-top: 3px;
+}
+
+button {
+    border: none;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: Cambria;
+}
+
+#button-convert {
+    background-color: forestgreen;
+    color: white;
+    margin-right: 5px;
+}
+
+#button-reset {
+    background-color: royalblue;
+    color: white;
+    margin-right: 5px;
+}
+
+#button-reverse {
+background-color: palevioletred;
+color: white;
+}
+
+#error {
+    color: firebrick;
+    font-weight: bold;
+}
+
+#f-to-c {
+    display: none;
+}
+
+#howto {
+    align-items: start;
+}
