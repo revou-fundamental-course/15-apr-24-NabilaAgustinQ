@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Konversi Suhu</title>
+    <body>
+        <main>
+            <header class="main-title">
+                <h1>Konversi Suhu By Nabila AQ</h1>
+            </header>
+    
+           <section class="main-section">
+             <!-- section intro -->
+             <section>
+                <p>Masukkan Angka ke kotak di bawah, lalu klik tombol Konversi untuk 
+                    mendapatkan hasil konversi.</p>
+            </section>
+
+            <section class="section-celsius">
+                <header>
+                </header>
+                <article>
+                    <textarea id="input" rows="1" placeholder="Masukkan Angka"></textarea>
+
+                <!-- section input -->
+                <div class="section-input">
+                    <div>
+                        <!-- <input type="number" name="" class="value" id="input" value="0"> -->
+                        <select name="T" id="selection_1" style="width: 70%;">
+                            <option value="Celsius" selected>Derajat Celsius</option>
+                            <option value="Fahrenheit">Derajat Fahrenheit</option>
+                            <option value="Kelvin">Derajat Kelvin</option>
+                            <option value="Reamur">Derajat Reamur</option>
+                        </select>
+                    </div>
+                </div>
+
+                    <div class="container-button">
+                        <button type="button" id="button-convert">Convert</button>
+                        <button type="button" id="button-reset">Reset</button>
+                        <!-- <button type="button" id="button-reverse">Reverse</button> -->
+                    </div>
+                </article>
+
+                <div id="error" style="display: flex; justify-content: center; margin-top: 15px;"></div>
+            </section>
+
+            <!-- section asli -->
+            <section class="section-fahrenheit">
+                <header>
+                </header>
+                <article>
+                    <textarea id="output" rows="1" placeholder="Hasil"></textarea>
+                </article>
+
+                <!-- section output -->
+                <div class="section-output">
+                    <!-- <input type="number" name="" class="value" id="output" value="32.00"> -->
+                    <select name="T" id="selection_2" style="width: 70%;">
+                        <option value="Celsius">Derajat Celsius</option>
+                        <option value="Fahrenheit" selected>Derajat Fahrenheit</option>
+                        <option value="Kelvin">Derajat Kelvin</option>
+                        <option value="Reamur">Derajat Reamur</option>on>
+                    </select>
+                </div>
+            </section>
+
+            <section class="section-result">
+                <header>
+                    <h3>Cara Kalkulasi:</h3>
+                </header>
+                <article>
+
+                    <!-- section formula -->
+                    <div id="formula">
+                    <textarea id="howto">(0°C × 9/5) + 32 = 32.00°F</textarea>
+                        <!-- <p id="title">Rumus</p>
+                        <p id="howto">(0°C × 9/5) + 32 = 32.00°F</p> -->
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- section explain -->
+            <section class="section-explain">
+                <header>
+                    <h3>Cara Kalkulasi dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</h3>
+                </header>
+                <hr width="70%">
+
+                <p>Suhu <em class="s-miring1">S</em> derajat Fahrenheit (&deg;F) sama dengan suhu
+                <em class="s-miring2">S</em> dalam derajat Celsius (&deg;C) kali <b>9/5</b> tambah <b>32</b>.</p>
+                <article>
+                    <p class="formula-F"><em>S</em><sub>(&deg;F)</sub> = 
+                    (<em>S</em><sub>(&deg;C)</sub> x 9/5) + 32</p>
+                    
+                    <p>atau</p>
+
+                    <p class="formula-F"><em>S</em><sub>(&deg;F)</sub> = 
+                    (<em>S</em><sub>(&deg;C)</sub> x 1.8) + 32</p>
+                </article>
+            </section>
+           </section>
+        </main>
+        <script src="./JS/script-edit.js"></script>
+    </body>
+</head>
+</html>
